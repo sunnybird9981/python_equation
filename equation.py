@@ -669,25 +669,3 @@ class Equation():
 
     def __repr__(self):
         return f"{self.lhs} = {self.rhs}"
-
-def main():
-    # define variables
-    x = Monomial(1, {'x': 1})
-    y = Monomial(1, {'y': 1})
-    # define polynomials
-    p1 = y - 1
-    p2 = x ** 2 + x
-    # define equation
-    eq1 = Equation(p1, p2)
-
-    print("x :                   ", x)
-    print("x**2 :                ", x**2)
-    print("x + 2 * x:            ", x + 2 * x)
-    print("(x + 1) * (x + 2) :   ", (x + 1) * (x + 2))
-    print("(x + 1) ** 2 :        ", (x + 1) **2)
-    print("p1 :                  ", p1)
-    print("p2 :                  ", p2)
-    print("eq1 :                 ", eq1)
-
-if __name__ == "__main__":
-    main()
